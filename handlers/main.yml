@@ -1,0 +1,6 @@
+---
+# handlers file for bird
+- name: Reload bird
+  ansible.builtin.service:
+    name: bird
+    state: reloaded

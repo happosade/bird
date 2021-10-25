@@ -1,0 +1,11 @@
+---
+- name: Prepare molecule docker
+  hosts: all
+  tasks:
+    - name: Install basic apt tools
+      ansible.builtin.apt:
+        name: 
+          - software-properties-common
+          - dirmngr
+          - gpg
+        update_cache: true

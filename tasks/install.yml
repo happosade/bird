@@ -1,0 +1,8 @@
+---
+- name: Add bird ppa
+  ansible.builtin.apt_repository:
+    repo: ppa:cz.nic-labs/bird
+
+- name: Install bird
+  ansible.builtin.apt:
+    name: bird
